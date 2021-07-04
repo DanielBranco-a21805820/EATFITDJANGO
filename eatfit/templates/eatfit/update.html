@@ -1,0 +1,14 @@
+{% extends 'eatfit/base.html' %}
+
+{% block main %}
+    <h3>Utilizador</h3>
+    <form action="{% url 'eatfit:update' user_id %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <a href="{% url 'eatfit:tabela' %}" role="button" class="btn btn-warning">Cancelar</a>
+        <input type="submit" value="Gravar" class="btn btn-success">
+
+    </form>
+
+{% endblock %}

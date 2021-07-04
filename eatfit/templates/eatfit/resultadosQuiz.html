@@ -1,0 +1,22 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+{% block content %}
+    <h1 style="color: black; margin-left: -45vw; font-size: 10vw">RESULTADOS</h1>
+{% endblock %}
+
+{% block resto %}
+    <h2>Conseguiu {{ pontos }} pontos!</h2>
+    {% for linha in perguntas %}
+        <ul>
+            <li>
+                {{ linha }}
+            </li>
+        </ul>
+
+
+
+    {% endfor %}
+
+    <img style="margin-left: 30vw; margin-top: -20vw" src="data:image/png;base64, {{ chart|safe }}">
+
+{% endblock %}

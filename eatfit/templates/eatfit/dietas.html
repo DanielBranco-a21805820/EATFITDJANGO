@@ -1,0 +1,102 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/dietas.css' %}">
+{% endblock %}
+{% block content %}
+    <h1 style="color: black; margin-left: -45vw; font-size: 10vw; margin-top: 5vw">DIETAS</h1>
+    <p class="introDieta"> Ter um corpo saudável e com
+        a qual se está confortável é um objetivo importante para
+        tods, pois não só ajuda a melhorar a autoestima como
+        tambem reduz o risco de inúmeras doenças.
+        <br> <br>
+        Para atingir este objetivo, a pessoa deve perceber a sua
+        situação (se deve perder ou ganhar peso) para poder delinear
+        uma autoestima como também reduz o plano eficiente e eficaz para si.
+    </p>
+{% endblock %}
+{% block main %}
+
+    <h2 style="color: black; font-size: 4vw">Perder Peso</h2>
+
+    <p>Uma pessoa engorda quando existe uma ingestão de calorias superior
+        aquelas que são gastas, estas calorias em excesso são depois
+        armazenadas no corpo sob a forma de gordura. A solução para este
+        problema é simples, deve existir um défice calórico, ou seja,
+        gastar mais calorias que aquelas que se consomem. algo que é
+        alcançado através da ingestão de um número reduzido de calorias
+        e com a prática de exercício físico.</p>
+
+
+    <div class="card-group" style="width: 80rem; margin-left: -7vw">
+        {% for k,v in perder.items %}
+            <div class="card" style="background-color: #f5f5f5">
+                {% for key,image in imagens_perder.items %}
+                    {% if key == k %}
+                        <img src="{% static  image %}" style="width: 45%; margin-left: 80px" class="card-img-top"
+                             alt="...">
+                    {% endif %}
+                {% endfor %}
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center">{{ k }}</h5>
+                    <p class="card-text" style="text-align: start">{{ v }}</p>
+
+
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <h2 style="color: black; font-size: 4vw">Ganhar Peso</h2>
+
+    <p>Para ganhar peso de maneira controlada e saudável, a dieta ideal para
+        esse objetivo é a hipercalórica, onde o ideal é fazer mais de três
+        refeições por dia. É uma dieta que é baseada num consumo elevado
+        de calorias. É também recomendada a pessoas que tenham como objetivo
+        aumento da massa muscular.</p>
+
+
+    <div class="card-group" style="width: 80rem; margin-left: -7vw">
+        {% for k,v in ganhar.items %}
+            <div class="card" style="background-color: #f5f5f5">
+                {% for key,image in imagens_ganhar.items %}
+                    {% if key == k %}
+                        <img src="{% static  image %}" style="width: 45%; margin-left: 80px" class="card-img-top"
+                             alt="...">
+                    {% endif %}
+                {% endfor %}
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center">{{ k }}</h5>
+                    <p class="card-text" style="text-align: start">{{ v }}</p>
+
+
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+{% endblock %}
+

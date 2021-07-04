@@ -1,0 +1,24 @@
+{% extends 'eatfit/base.html' %}
+{% block content %}
+    <h1 style="color: black; margin-left: -45vw; font-size: 10vw">RESULTADOS</h1>
+{% endblock %}
+
+{% block resto %}
+    {% if chart %}
+        <center>
+            <img src="data:image/png;base64, {{ chart|safe }}">
+        </center>
+    {% endif %}
+    <h2 style="margin-left: 15vw">Legenda</h2>
+    <ul style="margin-left: 15vw">
+        <li><b>Compreensão:</b> O conteúdo no website é de clara compreensão.</li>
+        <li><b>Rigor:</b> Como classifica o rigor da página.</li>
+        <li><b>Facilidade_acesso:</b> É fácil aceder aos menus da página.</li>
+        <li><b>Importante:</b> A informação apresentada foca-se no importante.</li>
+        <li><b>Complexidade:</b> O website está complexo e com multiplas inter-relacões.</li>
+        <li><b>Perguntas_quizz:</b> As perguntas no quizz eram percetiveis.</li>
+        <li><b>Amplitude:</b> Quão amplo está o website.</li>
+        <li><b>Originalidade:</b> O website está original?.</li>
+        <li><b>Aconselha:</b> Aconselhava o site a outras pessoas.</li>
+    </ul>
+{% endblock %}

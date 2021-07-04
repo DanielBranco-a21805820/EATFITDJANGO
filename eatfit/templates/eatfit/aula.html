@@ -1,0 +1,42 @@
+{% extends 'eatfit/base.html' %}
+
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/relations.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>{{ Aula.nome }}</h1>
+{% endblock %}
+
+{% block resto %}
+
+    <ul>
+        <li>Aula dada pelo(a) {{ Aula.professor }}</li>
+        <li>Duracao: {{ Aula.duracao }} minutos</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+
+    <h2>Alunos</h2>
+    <ul>
+        {% for aluno in alunos %}
+            <li>{{ aluno }}</li>
+        {% empty %}
+            <li>Sem alunos</li>
+        {% endfor %}
+    </ul>
+
+    <form action="{% url 'eatfit:inscrever' Aula.id %}" method="POST">
+        {% csrf_token %}
+        <select name="aluno">
+            {% for non_aluno in non_alunos %}
+                <option value="{{ non_aluno.id }}">{{ non_aluno }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit">
+    </form>
+
+    <a href="{% url 'eatfit:taulas' %}">Voltar à lista de Aulas</a>
+{% endblock %}

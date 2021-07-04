@@ -1,0 +1,20 @@
+{% extends 'eatfit/base.html' %}
+
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/relations.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Aulas</h1>
+{% endblock %}
+{% block resto %}
+
+    <ul>
+        {% for aula in aulas %}
+            <li><a href="{% url 'eatfit:aula' aula.id %}">Aula {{ aula.id }}: {{ aula.nome }} com
+                o(a) {{ aula.professor }}. Duração: {{ aula.duracao }} minutos</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

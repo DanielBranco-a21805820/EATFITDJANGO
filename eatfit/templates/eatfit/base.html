@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EAT&FIT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700&&family=Montserrat:wght@800&family=Oxygen:wght@300&family=Yellowtail&display=swap"
+            rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/base.css' %}">
+    <link rel="stylesheet" href="{% static  'eatfit/css/estilos.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static  'eatfit/images/icon.png' %}">
+    {% block styles %}
+    {% endblock %}
+</head>
+<body>
+<header class="jumbotron text-center" style="background-color: #FFE175">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a style="margin-top: 90px" class="navbar-brand" href="{% url 'eatfit:home' %}"><img class="simbolo"
+                                                                                                 src="{% static  'eatfit/images/símbolo.png' %}"></a>
+            <a class="navbar-brand" href="{% url 'eatfit:batidos' %}">Batidos</a>
+            <a class="navbar-brand" href="{% url 'eatfit:exercicios' %}">Exercicios</a>
+            <a class="navbar-brand" href="{% url 'eatfit:alimentos' %}">Alimentos</a>
+            <a class="navbar-brand" href="{% url 'eatfit:conselhos' %}">Conselhos</a>
+            <a class="navbar-brand" href="{% url 'eatfit:dietas' %}">Dietas</a>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock content %}
+</header>
+
+{% block resto %}
+{% endblock %}
+<article class="container">
+    <main>
+        {% block main %}
+        {% endblock main %}
+    </main>
+</article>
+<footer>Universidade Lusofona | 3ºano</footer>
+</body>
+</html>

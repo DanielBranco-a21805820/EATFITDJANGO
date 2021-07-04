@@ -1,0 +1,23 @@
+body {
+
+}
+body > ul:first-of-type {
+  display: inline-block;
+  margin-left: 5vw;
+    font-size: 2vw;
+
+}
+
+h2{
+    margin-left: 5vw;
+}
+body > ul {
+  display: inline-block;
+  margin-left: 6vw;
+    font-size: 1.2vw;
+}
+
+form{
+  margin-left: 5vw;
+}
+

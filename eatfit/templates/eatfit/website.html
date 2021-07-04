@@ -1,0 +1,277 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/website.css' %}">
+{% endblock %}
+{% block content %}
+    <h1 class="title" style="color: black; margin-left: -45vw; font-size: 10vw">WEBSITE</h1>
+
+{% endblock %}
+
+{% block resto %}
+    <main>
+
+        <video autoplay muted loop id="myVideo" style="width: 100%;">
+            <source src="{% static  'eatfit/videos/website.mp4' %}" type="video/mp4">
+        </video>
+
+        <div class="info">
+            <p class="tecn1">Esta página é dedicada a todas as
+                tecnicas usadas em todo o website, um inventário do que foi usado, layouts e no fim um vídeo de
+                apresentação do website onde tem o respetivo mapa. </p>
+        </div>
+
+
+    </main>
+    <div id="content1">
+        <i>
+            <h3 class="tecn3">Layouts</h3>
+        </i>
+
+        <center>
+            <figure>
+                <img class="layouts" src="{% static  'eatfit/images/layout.png' %}">
+                <img class="layouts1" src="{% static  'eatfit/images/layoutMovel.png' %}">
+                <figcaption>Layouts</figcaption>
+            </figure>
+        </center>
+
+
+    </div>
+
+
+
+    <div id="content2">
+        <i>
+            <h3 class="tecn5">Tabela do Inventário</h3>
+        </i>
+
+
+        <table>
+            <tr>
+                <th class="tab5" bgcolor="Snow">ATRIBUTOS</th>
+                <th class="tab6" bgcolor="Snow">QUANTIDADE</th>
+            </tr>
+
+            <tr>
+                <td class="tab1">Imagens</td>
+                <td>48</td>
+            </tr>
+
+            <tr>
+                <td class="tab1">Links Externos</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td class="tab1">Videos</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td class="tab1">Animações</td>
+                <td>2</td>
+            </tr>
+
+
+        </table>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+
+    <div id="content3">
+        <div class="flexbox">
+            <div>
+                <img class="img1" src="{% static  'eatfit/images/1.jpg' %}">
+            </div>
+            <div>
+                <img class="img2" src="{% static  'eatfit/images/2.jpg' %}">
+            </div>
+            <div>
+                <img class="img3" src="{% static  'eatfit/images/3.jpg' %}">
+            </div>
+            <div>
+                <img class="img4" src="{% static  'eatfit/images/4.jpg' %}">
+            </div>
+            <div>
+                <img class="img5" src="{% static  'eatfit/images/5.jpg' %}">
+            </div>
+        </div>
+    </div>
+
+    <div id="content4">
+
+        <i>
+            <h3 class="tecn7">Técnicas Usadas</h3>
+        </i>
+
+        <table class="tecnicas">
+            <tr>
+                <th class="tecn8" bgcolor="Wheat">Carateristicas</th>
+                <th class="tecn9" bgcolor="Wheat">Elementos/técnicas</th>
+                <th class="tecn10" bgcolor="Wheat">Exemplos</th>
+            </tr>
+
+            <tr>
+                <td class="tecn11">Layouts</td>
+                <td>Usou-se o CSS grid e CSS flexbox para construção de layouts</td>
+                <td>Container na intro da linha 38 a 52</td>
+            </tr>
+
+            <tr>
+                <td class="tecn11">Responsividade</td>
+                <td>Foram usadas media queries que adaptam o layout para telemovel e PC consoante o tamanho da
+                    janela do browser.
+                </td>
+                <td>Media Query na intro da linha 236 a 247</td>
+            </tr>
+
+            <tr>
+                <td class="tecn11">Seletores</td>
+                <td>Foram usados seletores universais, de tipo, classe, id,atributo e pseudo-classe</td>
+                <td>Página estilos.css da linha da linha 91 a 97(seletor de atributo)</td>
+            </tr>
+
+            <tr>
+                <td class="tecn11">Etiquetas</td>
+                <td>HTML5 main, header, article, footer, figure, a</td>
+                <td>Todas as páginas contém um footer no fim</td>
+            </tr>
+
+            <tr>
+                <td class="tecn11">Animações</td>
+                <td>Foram feitas animações usando keyframes que permitem dar movimento e comportamentos particulares
+                    a imagens.
+                </td>
+                <td>No header da página dos exercícios, o codigo do keyframe está na pagina dos estilos.css da linha
+                    211 a 214
+                </td>
+
+            </tr>
+            <tr>
+                <td class="tecn11">Views</td>
+                <td>Utilizamos várias views que são simplesmente funções Python que recebem um pedido Web e retorna uma
+                    resposta Web.
+                </td>
+                <td><img src="{% static  'eatfit/images/views.jpg' %}"></td>
+
+            </tr>
+            <tr>
+                <td class="tecn11">Models</td>
+                <td>Utilizamos vários models que são uma fonte única e definitiva de dados. Eles contém os campos e
+                    comportamentos essenciais dos dados que nós queremos gravar.
+                </td>
+                <td><img src="{% static  'eatfit/images/models.jpg' %}"></td>
+
+            </tr>
+            <tr>
+                <td class="tecn11">Forms</td>
+                <td>Para recolher os dados dos utilizadores utilizámos vários formulários. Para isso usamos o forms que
+                    é a biblioteca de manipulação de formulários do django.
+                </td>
+                <td><img src="{% static  'eatfit/images/forms.jpg' %}"></td>
+
+            </tr>
+            <tr>
+                <td class="tecn11">URLS</td>
+                <td>Cada expressão no módulo urls.py serve para analisar as URLs dos pedidos e invocar a view apropriada
+                    para cada padrão de URL.
+                </td>
+                <td><img src="{% static  'eatfit/images/urls.jpg' %}"></td>
+
+            </tr>
+            <tr>
+                <td class="tecn11">JavaScript</td>
+                <td>JavaScript é uma linguagem de programação de alto nível criada para ser executada em navegadores e
+                    manipular comportamentos de páginas web.
+                </td>
+                <td><img src="{% static  'eatfit/images/javascript.jpg' %}"></td>
+
+            </tr>
+            <tr>
+                <td class="tecn11">Comunicação assíncrona AJAX para comunicar com APIs</td>
+                <td>Para conseguirmos apresentar a informação que queríamos na SPA, tivemos de criar este script que
+                    efetua a comunicação com a API.
+                </td>
+                <td><img src="{% static  'eatfit/images/api.jpg' %}"></td>
+
+            </tr>
+
+        </table>
+
+        <br>
+        <br>
+
+    </div>
+
+    <div id="content5">
+
+        <i>
+            <h3 class="tecn13">Vídeo de Apresentação</h3>
+        </i>
+
+        <iframe class="videoIntro" src="https://www.youtube.com/embed/5HR6v8_AW4I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        <br>
+        <br>
+
+    </div>
+
+    <div id="content6">
+
+        <i>
+            <h3 class="tecn15">Mapa do website</h3>
+        </i>
+
+
+        <br>
+        <br>
+
+    </div>
+
+    <div id="content7">
+
+        <i>
+            <h3 class="tecn17">WordClould</h3>
+        </i>
+
+        <center>
+            <svg id="hiperWordcloud">
+                <image href="{% static  'eatfit/images/wordcloud.png' %}">
+                </image>
+
+                <a href="dietas.html">
+                    <polygon opacity="0.1" points="288,36,347,1,513,216,460,258"/>
+                </a>
+                <a href="intro.html">
+                    <polygon opacity="0.1" points="276,138,273,280,405,284,396,152"/>
+                </a>
+                <a href="conselhos.html">
+                    <polygon opacity="0.1" points="32,249,31,275,266,282,266,257"/>
+                </a>
+                <a href="exercicios.html">
+                    <polygon opacity="0.1" points="143,286,144,337,560,346,563,281"/>
+                </a>
+                <a href="batidos.html">
+                    <polygon opacity="0.1" points="167,351,167,421,524,423,521,360"/>
+                </a>
+                <a href="alimentos.html">
+                    <polygon opacity="0.1" points="106,429,100,505,572,502,571,438"/>
+                </a>
+
+            </svg>
+        </center>
+
+        <br>
+        <br>
+
+
+    </div>
+{% endblock %}

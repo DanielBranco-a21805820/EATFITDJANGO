@@ -1,0 +1,43 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/contactos.css' %}">
+    <style>
+        ul li {
+            display: inline-block;
+            margin-left: 2vw;
+        }
+
+        input {
+            display: inline-block;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <h1 style="color: black; margin-left: -45vw; font-size: 10vw">QUIZ</h1>
+{% endblock %}
+
+{% block main %}
+    <fieldset style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <h1 class="display-3" style="background-color:#000000;color:#FFFF99; text-align: center">Responda às seguintes
+            perguntas</h1>
+        <form method='POST' enctype="multipart/form-data">
+            {% csrf_token %}
+
+            {{ form }}
+
+            <button type="submit" style="margin-left: 33vw">Submit</button>
+
+            <br><br>
+            <br><br>
+
+
+        </form>
+
+    </fieldset>
+{% endblock %}

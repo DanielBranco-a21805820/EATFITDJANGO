@@ -1,0 +1,112 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/conselhos.css' %}">
+{% endblock %}
+{% block content %}
+    <h1 style="color: black; margin-left: -45vw; font-size: 10vw">CONSELHOS</h1>
+    <p class="introConselho">É
+        necessário cuidar do corpo se
+        queremos ter bons resultados.
+        Para isso, vamos dar alguns
+        conselhos para melhorar a sua
+        performance e saúde.
+    </p>
+{% endblock %}
+{% block main %}
+
+    <h2 style="color: black; font-size: 4vw">#1 CONSELHO</h2>
+
+
+    {% for k,v in conselho11.items %}
+        <div class="card mb-1" style="width: 50rem; margin-left: 7vw">
+            <div class="row g-0">
+                <div class="col-md-6" style="text-align: center">
+                    {% for key,value in conselho13.items %}
+                        {% if key == k %}
+                            <img src="{% static  value %}" style="width: 40%; margin-top: 5vw" alt="...">
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: 2vw">{{ k }}</h5>
+                        {% for frase in v %}
+                            <p class="card-text">
+                            <li style="font-size: 1.1vw">{{ frase }}</li></p>
+                        {% endfor %}
+                        {% for key,value in conselho12.items %}
+                            {% if key == k %}
+                                <p class="card-text">{{ value }}</p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+
+    <h2 style="color: black; font-size: 4vw">#2 CONSELHO</h2>
+
+    <p class="consetext13"><b>Cada vez mais, existem pessoas a praticar
+        exercício<br>
+        físico com a preocupação da saúde e forma física.<br>
+        Consequentemente, esse exercício pode trazer lesões e<br>
+        dor nos músculos que é necessário tratar com atenção.<br>
+
+        <br>
+
+        A massagem ajuda não só a aliviar a dor, como tonificar<br>
+        o tecido muscular, eliminar as toxinas e até reduzir o<br>
+        cansaço.
+    </b>
+
+    </p>
+
+    <video class="vidspa" autoplay muted loop>
+        <source src={% static  'eatfit/videos/2cons.mp4' %} type="video/mp4">
+    </video>
+
+
+    <h2 style="color: black; font-size: 4vw">#3 CONSELHO</h2>
+
+
+    <p class="consetext15"><b>
+        Chama-se
+        <u>"Kinesio Tape"</u> e são fitas adesivas de algodão
+        bastante elásticas para que lesões musculares e de tendão<br>
+        pudessem ser curadas mais rapidamente.<br><br>
+        Deve ser usado para:
+    </b>
+    </p>
+
+    {% for k in conselho3 %}
+        <ul style="margin-left: 9vw; font-size: 1.2vw">
+            <li>{{ k }}</li>
+
+        </ul>
+    {% endfor %}
+
+    <p class="consetext22"><b>O
+        modo de aplicação é simples, mas é<br>
+        <u>necessário ter cuidado, deve - se aplicar sob o musculo</u><br>
+        <u>em questão.</u>
+    </b>
+    </p>
+
+    <img class="esquerdo" src="{% static  'eatfit/images/direita.png' %}">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+{% endblock %}
+

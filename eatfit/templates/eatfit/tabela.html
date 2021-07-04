@@ -1,0 +1,18 @@
+{% extends 'eatfit/base.html' %}
+{% block main %}
+    {% for user in lista %}
+        <p>
+            {{ user.nome }}
+            <a href="{% url 'eatfit:update' user.id %}" class="btn btn-success  btn-sm"
+               style="float: right; margin-right: 10px">
+                Editar
+            </a>
+            <a href="{% url 'eatfit:delete' user.id %}" class="btn btn-danger  btn-sm"
+               style="float: right; margin-right: 10px">
+                Eliminar
+            </a>
+        </p>
+    {% endfor %}
+    <a href="{% url 'eatfit:logout' %}" class="btn btn-warning btn-sm">Logout</a>
+    <a href="{% url 'eatfit:resultados' %}" class="btn btn-primary btn-sm">Resultados dos Comentários</a>
+{% endblock %}

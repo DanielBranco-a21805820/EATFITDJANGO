@@ -1,0 +1,64 @@
+{% extends 'eatfit/base.html' %}
+
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/autores.css' %}">
+
+    <script>
+        function showSection(section) {
+
+            fetch(`/sections/${section}`)
+                .then(response => response.text())
+                .then(text => {
+                    console.log(text);
+                    document.querySelector('#content').innerHTML = text;
+                    if (text.includes("Daniel")) {
+                        document.querySelector('#imagem').src = "{% static "eatfit/images/daniel.jpg" %}"
+                    }
+                    if (text.includes("Elisa")) {
+                        document.querySelector('#imagem').src = "{% static "eatfit/images/elisa.jpeg" %}"
+                    }
+                });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('button').forEach(button => {
+                button.onclick = function () {
+                    showSection(this.dataset.section);
+                };
+            });
+        });
+    </script>
+    <script src="{% static  'eatfit/js/hoverMe.js' %}"></script>
+
+{% endblock %}
+
+{% block content %}
+    <h1 class="title" style="color: black; margin-left: -45vw; font-size: 10vw">Sobre Nós</h1>
+{% endblock %}
+
+{% block resto %}
+    <center>
+        <figure style="text-align: center">
+            <img class="desc" src="{% static  'eatfit/images/EAT__FIT.jpg' %}">
+            <h5>Eat & Fit ajudará em todos os aspetos da sua vida ativa (desporto) e alimentar (dietas). BORA LÁ!</h5>
+        </figure>
+    </center>
+    <h2>Estes são os criadores do Eat&Fit</h2>
+    <div class="center">
+        <button onmouseover="style.color='yellow'" onmouseout="style.color='white'" data-section="1">Daniel</button>
+        <button onmouseover="style.color='yellow'" onmouseout="style.color='white'" data-section="2">Elisa</button>
+    </div>
+
+    <div id="content">
+    </div>
+    <img id="imagem">
+
+    <h4>Passa por cima de mim</h4>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}

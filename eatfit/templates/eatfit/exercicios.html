@@ -1,0 +1,98 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/exercicio.css' %}">
+{% endblock %}
+{% block content %}
+<h1 style="color: black; margin-left: -50vw; font-size: 10vw">EXERCÍCIOS</h1>
+ <p class="introExercicios">Como sabemos exercitar o corpo é vital para ter uma
+                vida saudável e para o ajudar <br> nessa parte apresentamos
+                aqui alguns exercícios que pode facilmente combinar
+                para fazer <br> o seu treino caseiro que certamente ajudarão
+                a atingir os seus objetivos físicos. <br><br>
+                Nesta página vamos listar alguns exercícios por tipo
+                e/ou zona do corpo e <br> demonstrar como realizar estes. A
+                grande maioria dos exercícios podem ser realizados <br> com
+                material disponível na sua casa. <b>Por isso não existem
+                    desculpas para não começar <br> a exercitar já hoje!</b>
+            </p>
+{% endblock %}
+
+{% block resto %}
+    <h2 class="exe2">Exercícios de força - Exercícios que
+                tem
+                como objetivo o fortalecimento dos músculos.</h2>
+
+
+            <figure class="exercicios">
+                <img src="{% static  'eatfit/images/pernas.png' %}" class="pernas">
+                <img src="{% static  'eatfit/images/braco.png' %}" class="bracos">
+                <img src="{% static  'eatfit/images/core.png' %}" class="core">
+                <img src="{% static  'eatfit/images/costas.png' %}" class="costas">
+            </figure>
+
+
+            <h3 class="exetext1">PERNAS</h3>
+            <h3 class="exetext2">BRAÇOS</h3>
+            <h3 class="exetext3">CORE</h3>
+            <h3 class="exetext4">COSTAS</h3>
+
+            <ul class="exetext5">
+                <li>Agachamentos</li>
+                <li>Lunges</li>
+                <li>Calf Raises</li>
+                <li>Step-Ups</li>
+            </ul>
+
+            <ul class="exetext6">
+                <li>Bicep Curls</li>
+                <li>Fundos</li>
+                <li>Flexões em pino</li>
+                <li>Chin-Ups</li>
+            </ul>
+
+            <ul class="exetext7">
+                <li>Flexões de braços</li>
+                <li>Prancha</li>
+                <li>Ab Crunch</li>
+            </ul>
+
+            <ul class="exetext8">
+                <li>Elevações</li>
+                <li>Remada Horizontal</li>
+            </ul>
+
+
+
+
+        <div id="content2">
+
+            <h2 class="exe3">Exercícios cardiovasculares -
+                Exercícios
+                cardio são atividades que solicitam a função
+                cardíaca, nomeadamente as funções respiratória e circulatória.</h2>
+
+            <figure class="imagenscont2">
+                <img class="correr" src="{% static  'eatfit/images/correr.png' %}">
+                <img class="corda" src="{% static  'eatfit/images/corda.png' %}">
+                <img class="bicicleta" src="{% static  'eatfit/images/bicicleta.png' %}">
+                <img class="burpee" src="{% static  'eatfit/images/burpee.png' %}">
+            </figure>
+
+            <h3 class="exetext9">CORRER</h3>
+            <h3 class="exetext10">SALTAR À CORDA</h3>
+            <h3 class="exetext11">BICICLETA ESTÁTICA</h3>
+            <h3 class="exetext12">BURPEES</h3>
+
+
+
+
+            <div class="words">
+                <h2 style="color: white;">PROGRESSÃO</h2>
+                <h2 style="color: white;">TREINO</h2>
+                <h2 style="color: white;">NUTRIÇÃO</h2>
+                <h2 style="color: white;">CONFIANÇA</h2>
+            </div>
+        </div>
+
+{% endblock %}

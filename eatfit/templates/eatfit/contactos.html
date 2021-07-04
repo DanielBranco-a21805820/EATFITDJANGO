@@ -1,0 +1,42 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/contactos.css' %}">
+    <script src="{% static  'eatfit/js/alert.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <h1 style="color: black; margin-left: -45vw; font-size: 10vw">CONTACTOS</h1>
+{% endblock %}
+
+{% block main %}
+    <center>
+        <fieldset>
+            <h1 class="display-3" style="background-color:#000000;color:#FFFF99;">Dados do Utilizador</h1>
+            <form method='POST' enctype="multipart/form-data">
+                {% csrf_token %}
+                <label for="fname"><b>Nome:</b> </label>
+                <input autofocus required type="text" id="fname" name="nome"
+                       style="margin-left: 27vw; margin-top: -2vw">
+                <br>
+                <label for="lname"><b>Apelido:</b> </label>
+                <input required type="text" id="lname" name="apelido" style="margin-left: 27vw; margin-top: -2vw">
+                <br>
+                <label for="phone"><b>Número de telefone:</b> </label>
+                <input required type="tel" id="phone" name="telemovel" style="margin-left: 27vw; margin-top: -2vw">
+                <br>
+                <label for="email"><b>Email:</b> </label>
+                <input required multiple type="email" id="email" name="email"
+                       style="margin-left: 27vw; margin-top: -2vw">
+                <br>
+                <label for="nascimento"><b>Data de nascimento:</b> </label>
+                <input required type="date" id="nascimento" max="2020-12-31" min="1920-01-01" name="nascimento"
+                       style="margin-left: 27vw; margin-top: -2vw">
+                <br>
+
+                <button type="submit" class="btn btn-lg btn-warning">Submit</button>
+            </form>
+        </fieldset>
+    </center>
+
+{% endblock %}

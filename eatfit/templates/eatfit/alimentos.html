@@ -1,0 +1,48 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/alimentos.css' %}">
+{% endblock %}
+{% block content %}
+    <h1 style="color: black; margin-left: -45vw; font-size: 10vw">(SUPER)<br>ALIMENTOS</h1>
+    <p class="alitext1">São um conjunto de alimentos que contém um alto teor
+        em fito nutrientes (nutrientes de origem vegetal) com
+        elevadas vantagens para a saúde, estes alimentos
+        contêm teores de vitaminas, minerais, aminoácidos,
+        ácidos gordos essenciais ou antioxidantes, pelo que a
+        sua introdução na alimentação diária melhora, de um
+        modo geral, o bem-estar físico. Devem ser consumidos
+        em forma de batidos, sumos, saladas, cereais, iogurtes
+        , etc..</p>
+{% endblock %}
+{% block main %}
+
+    {% for k,v in alimentos.items %}
+        <div class="card mb-1" style="width: 80rem; margin-left: -5vw">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    {% for key,value in imagens.items %}
+                        {% if key == k %}
+                            <img src="{% static  value %}" style="width: 80%" alt="...">
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold; font-size: 2vw">{{ k }}</h5>
+                        <p class="card-text">{{ v }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+
+
+
+
+
+
+
+
+{% endblock %}

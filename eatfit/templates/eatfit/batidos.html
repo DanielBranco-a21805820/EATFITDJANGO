@@ -1,0 +1,59 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/batidos.css' %}">
+{% endblock %}
+{% block content %}
+    <h1 style="color: black; margin-left: -45vw; font-size: 10vw">BATIDOS</h1>
+    <p class="descricaoB">Os batidos são bebidas fornecedoras de
+        energia.<br>
+        Quem se exercita frequentemente precisa
+        de repor as<br>
+        energias, vitaminas e nutrientes que são
+        necessários para<br>
+        executar os exercícios com rapidez e
+        sucesso.</p>
+{% endblock %}
+{% block main %}
+
+    <div class="card-group" style="width: 80rem; margin-left: -7vw">
+        {% for k,v in ingredientes.items %}
+            <div class="card">
+                {% for key,image in imagens.items %}
+                    {% if key == k %}
+                        <img src="{% static  image %}" style="width: 45%; margin-left: 80px" class="card-img-top"
+                             alt="...">
+                    {% endif %}
+                {% endfor %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ k }}</h5>
+                    <p class="card-text">
+
+
+                        {% for ingrediente in v %}
+                            <li style="font-size: 16px">{{ ingrediente }}</li>
+                        {% endfor %}
+
+                    <small class="text-muted">
+                        {% for chave,texto in lista_n.items %}
+                            {% for macro in texto %}
+                                {% if chave == k %}
+                                    {{ macro }}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </small>
+                    </p>
+
+
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+    </div>
+
+
+
+{% endblock %}

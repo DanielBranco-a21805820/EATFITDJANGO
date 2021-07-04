@@ -1,0 +1,23 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+
+
+{% block main %}
+    <h1 style="margin-left: 50vw">Login</h1>
+    {% if message %}
+        <div style="margin-left: 47vw"> {{ message }} </div>
+    {% endif %}
+    <div style="background-color: #ddddff; width: 47vw; height:48vw; margin-top: -20vw; margin-left: -15vw"></div>
+
+    <img style="margin-top: -45vw; margin-left: -8vw" src={% static 'eatfit/images/login.png' %}>
+
+    <form action="{% url 'eatfit:auth' %}" method="POST">
+        {% csrf_token %}
+        <p style="margin-left: 47vw; margin-top: -27vw">Username:</p>
+        <input type="text" name="username" placeholder="username" style="margin-left: 54vw; margin-top: -2.7vw"><br>
+        <p style="margin-left: 47vw">Password:</p>
+        <input type="password" name="password" placeholder="password" style="margin-left: 54vw; margin-top: -2.7vw"><br>
+        <input type="submit" value="Login" style="margin-left: 55vw">
+    </form>
+
+{% endblock %}

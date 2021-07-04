@@ -1,0 +1,2347 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav a{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1.5rem;
+    color: black;
+    font-size: 1.5vw;
+    letter-spacing: 1.35px;
+}
+
+
+nav a:active{
+    font-size: 1.7vw;
+}
+
+h1{font-family: 'Barlow Condensed', sans-serif;}
+
+nav {
+    z-index: 3;
+    top: 0;
+    text-transform: uppercase;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    height: 80px;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.extraMenu{
+    margin-top: 10vh;
+    margin-right: 12vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-content:flex-end;
+    row-gap: 1vh;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.extraMenu a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    row-gap: 3vh;
+    color: black;
+}
+
+.simbolo{
+    height: 7vw;
+    width: 16vw;
+    margin-top: -6vh;
+    margin-left: -3vw;
+    margin-right: -10vw;
+}
+
+
+
+
+.setinha{
+    z-index: 2;
+    position: relative;
+    width: 20%;
+    height: 20%;
+    transform: rotate(90deg);
+}
+
+h1{
+    font-size: 6.5vw;
+}
+
+p{
+    font-size: 1.2vw;
+}
+
+[class^="seta"]{
+    position: relative;
+    display: block;
+    row-gap: 1vw;
+    width: 15%;
+    margin-bottom: 30px;
+}
+
+
+
+.setaE{
+    top: 2.5vw;
+    margin-left: 24vw;
+    margin-top: 5vw;
+}
+
+.setaD{
+    top: -24vw;
+    margin-left: 52vw;
+    margin-bottom: 5vw;
+}
+
+.forca{
+    display: flex;
+    height: 40%;
+}
+
+.exercicios{
+    display: flex;
+    column-gap: 15vw;
+    justify-content: center;
+
+}
+
+.exercicios img:hover{
+    visibility:collapse;
+}
+
+.workout:hover {
+    opacity: 0.5;
+  }
+
+.cardio{
+    display: flex;
+    height: 30%;
+    column-gap: 10vw;
+    justify-content: center;
+}
+
+.words{
+    
+    bottom: 0;
+    width:100%; 
+    padding: 0.7vw;
+    background-color: #1D1F2E;
+    color: white; 
+    height: 10vw;
+     display: flex; 
+     column-gap: 14vw;
+     justify-content: center;
+}
+
+
+.tingFrame{
+    position: absolute;
+    left: 12vw;
+}
+
+
+
+figure{
+    display: table;
+}
+
+.figc1{
+    
+    display: table-caption;
+  caption-side: top;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  padding-right: 50px; 
+  padding-top: 30px; 
+  margin-left: 38vw;
+  
+  font-size: 1.5vw;
+  background-color: #1D1F2E;
+  color:white;
+}
+
+input{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.radius{
+    display: inline-block;
+    }
+
+
+    .corpo{
+        width: 20%;
+        
+    }
+
+    .braco{
+        margin-left: -0.5vw;
+        width: 13%;
+        transform: rotate(55deg) translateY(1vw) translateX(1.1vw);
+        animation-name:bcurl;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    }
+
+    .animation{
+        width: 30%;
+        margin-left: 4vw;
+        margin-bottom: -11vw;
+    }
+
+
+    @keyframes bcurl{
+        from{transform: rotate(55deg) translateY(1vw) translateX(1.1vw)}
+        to{transform: rotate(0deg) translateX(-0.25vw) translateY(0px) }
+    }
+
+
+    .toTop{
+        position: fixed;
+        left: 90vw;
+       top: 3vw;
+        width: 3%;
+        z-index: 1;
+        transform: rotate(90deg);
+    }
+
+    table {
+        display: flex;
+        border-collapse: collapse;
+        width: 100%;
+        justify-content: center;
+
+      }
+
+    .tecnicas{
+        border-collapse: collapse;
+    }
+
+      td {
+        border: 2px solid #ffffff;
+        text-align: center;
+        padding: 8px;
+      }
+
+      th {
+        border: 3px solid #ffffff;
+        text-align: CENTER;
+        padding: 8px;
+        font-size:1.5vw; 
+        font-family: 'Recursive', sans-serif;
+      }
+
+      tr:nth-child(2n) {
+        background-color: #dddddd;
+      }
+
+      tr:nth-child(2n+1) {
+        background-color: #c5c4c4;
+      }
+
+      .flexbox{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+      }
+
+      .img1{
+          width: 100%;
+          height: 100%;
+      }
+
+      .img2{
+        width: 100%;
+        height: 100%;
+      }
+
+    .img3{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img4{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img5{
+        width: 100%;
+        height: 100%;
+    }
+
+.info{
+    position:sticky;
+    align-items: baseline;
+    align-self: start;
+   margin-top: -40vw;
+    background: rgba(223, 202, 82, 0.5);
+    color: #000000;
+    width: 100%;
+    padding: 20px;
+  }
+    
+
+.setaSticky{
+    width: 6%;
+    margin-bottom: -3vw;
+    left: 0px;
+    position: sticky;
+    top: 0px;
+    align-items: baseline;
+    align-self: start;
+}
+
+#hiperWordcloud{
+    position: relative;
+    top: -10vw;
+    margin-bottom: -12vw;
+    width:663px;
+    height: 530px;
+   transform: scale(0.7);
+}
+
+.quadrado{
+    background-color: #FFE175;
+    opacity: 0.5;
+    height: 15vw;
+    width: 20vw;
+    margin-left: 20vw;
+    position: relative;
+    top: 8vw;
+}
+
+.introConselho{
+    position: relative;
+    padding-left: 40vw;
+    top: -4vw;
+    left: -19vw;
+}
+
+.conse1{
+    font-size: 4vw;
+    color: black;
+
+}
+
+.blocoGelo{
+    width: 5%;
+    height: 5%;
+    margin-bottom: -6vw;
+    margin-left: -52vw;
+}
+
+.fogo{
+    position: relative;
+    top: -10vw;
+    width: 5%;
+    height: 5%;
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+    margin-left: 48vw;
+}
+
+.consetext1{
+    font-size: 2vw;
+    font-family: 'Recursive', sans-serif;
+    margin-left: -40vw;
+    margin-bottom: -4vw;
+}
+
+
+.consetext2{
+    position: relative;
+    top: -10vw;
+    font-size: 2vw;
+    margin-top: -6vw;
+    font-family: 'Recursive', sans-serif;
+    margin-left: 58vw;
+}
+
+.consetext3{
+    margin-left: 12vw;
+    font-size: 1.2vw;
+    margin-top: -12vw;
+}
+
+.consetext4{
+    text-indent: -68vw;
+}
+
+.consetext5{
+    text-indent: -62vw;
+}
+
+.consetext6{
+    text-indent: -66vw;
+}
+
+.consetext7{
+    font-size:1.2vw;
+    margin-left: -50vw;
+}
+
+.consetext8{
+    margin-left: 62vw;
+    margin-top:-12vw;
+    margin-bottom: 5vw;
+    font-size: 1.2vw;
+}
+
+.consetext9{
+    text-indent: -22vw;
+}
+
+.consetext10{
+    text-indent: -16vw;
+}
+
+.consetext11{
+    text-indent: -17vw;
+}
+
+.consetext12{
+    font-size: 1.2vw;
+    margin-left: 46vw;
+    margin-top:-4vw;
+    margin-bottom: 5vw;
+}
+
+.conse2{
+    font-size: 4vw;
+    color: white;
+    margin-left: 16vw;
+    text-align: start;
+
+}
+
+.consetext13{
+    font-size: 1.2vw;
+    margin-left: 16vw;
+    text-align: start;
+}
+
+.consetext14{
+    font-size: 1.2vw;
+    margin-left: 16vw;
+    margin-top: -12px;
+    font-family: 'Recursive', sans-serif;
+    text-align: start;
+}
+
+.spa{
+    width: 30%;
+    height: 40%;
+    margin-left: 60vw;
+    margin-top: -40vw;
+    margin-bottom: 8vw;
+}
+
+.vidspa{
+    margin-left: 45vw;
+    margin-top: -20vw;
+    margin-bottom: 8vw;
+    width: 35%;
+    height: 50%;
+}
+
+.conse3{
+    font-size: 4vw;
+    color: black;
+    margin-bottom:-50vw;
+
+}
+
+.figcons1{
+    display: inline;
+}
+
+.esquerdo{
+    width: 22%;
+    position: relative;
+    left: -24vw;
+    top: 35vw;
+}
+
+.direito{
+    width: 22%;
+    position: relative;
+    left: 20vw;
+    top: 35vw;
+}
+
+.consetext15{
+    font-size: 1.2vw;
+    padding-right: 32vw;
+    padding-left: 32vw;
+    text-align: start;
+}
+
+.consetext16{
+    font-size: 1.2vw;
+    margin-top: -1vw;
+    padding-right: 32vw;
+    padding-left: 32vw;
+    text-align: start;
+}
+
+.consetext17{
+    font-size: 1.2vw;
+    margin-left: 30vw;
+}
+
+.consetext18{
+    text-indent: -52vw;
+}
+
+.consetext19{
+    text-indent: -27vw;
+}
+
+.consetext20{
+    text-indent: -37vw;
+}
+
+.consetext21{
+    text-indent: -46vw;
+}
+
+.consetext22{
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    padding-right: 30vw;
+    padding-left: 30vw;
+    text-align: start;
+}
+
+.aviso{
+    width: 17%; 
+    height: 8%; 
+    margin-right: 40vw;
+}
+
+.consetext23{
+    font-size: 1.2vw; 
+    margin-left: 4vw; 
+    margin-top: -7vw; 
+    padding-right: 28vw; 
+    padding-left: 28vw; 
+    text-align: start;
+}
+
+.consetext24{
+    font-size: 1.2vw; 
+    margin-top: -1vw; 
+    font-family: 'Recursive', sans-serif; 
+}
+
+.ali1{
+    font-size: 6vw; 
+    margin-right: 10vw; 
+    margin-top: 4vw;
+}
+
+.alitext1{
+    font-size: 1.3vw;
+    margin-top: -24vw; 
+    margin-left: 60vw;
+}
+
+.alitext2{
+    font-size: 1.3vw;
+    margin-left: 59vw;
+}
+
+.alitext3{
+    font-size: 1.3vw;
+    margin-left: 57.5vw;
+}
+
+.alitext4{
+    font-size: 1.3vw;
+    margin-left: 58.5vw;
+}
+
+.alitext5{
+    font-size: 1.3vw;
+    margin-left: 59.5vw;
+}
+
+.alitext6{
+    font-size: 1.3vw;
+    margin-left: 59.5vw;
+}
+
+.alitext7{
+    font-size: 1.3vw;
+    margin-left: 60.5vw;
+}
+
+.alitext8{
+    font-size: 1.3vw;
+    margin-left: 60.5vw;
+}
+
+.alitext9{
+    font-size: 1.3vw;
+    margin-left: 34vw;
+}
+
+.ali2{
+    font-size: 20vw; 
+    margin-left: -70vw; 
+    margin-top: 1vw;  
+    color:#ffe1758c;
+}
+
+.ali3{
+    font-size: 20vw; 
+    margin-left: -71vw; 
+    margin-top: -45vw;
+}
+
+.alitext10{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 7vw; 
+    margin-top: -33vw; 
+    margin-left: -20vw;
+}
+
+.material-icons{
+    color: rgb(255, 208, 0);
+}
+
+.alitext11{
+    margin-top: 7vw; 
+    margin-left: -30vw;
+    padding-left: 40vw;
+    padding-right: 40vw;
+    text-align: start;
+}
+
+
+.alitext14{
+    margin-left: -30vw;
+    padding-left: 40vw;
+    padding-right: 40vw;
+    text-align: start;
+}
+
+
+.alitext17{
+    text-align: start;
+    margin-top: 10vw; 
+    margin-left: 35vw;
+}
+
+
+
+.alitext20{
+    text-align: start;
+    margin-left: 35vw;
+}
+
+
+.alitext23{
+    text-align: start;
+    margin-top: 7vw; 
+    margin-left: 5vw;
+    padding-right: 40vw;
+}
+
+.alitext27{
+    padding-right: 40vw;
+    text-align: start;
+    margin-left: 5vw;
+}
+
+
+.alitext29{
+    text-align: start;
+    margin-top: 7vw; 
+    margin-left: 30vw;
+    padding-right: 5vw;
+}
+
+
+
+.alitext32{
+    text-align: start;
+    margin-left: 30vw;
+    padding-right: 5vw;
+}
+
+
+
+.alitext35{
+    text-align: start;
+    margin-top: 7vw; 
+    margin-right: 30vw;
+    margin-left: 10vw;
+}
+
+
+.alitext39{
+    margin-left: 10vw;
+    text-align: start;
+    margin-right: 29vw;
+}
+
+
+.alitext41{
+    padding-right: 5vw;
+    text-align: start;
+    margin-top: 7vw; 
+    margin-left: 30vw;
+}
+
+.alitext44{
+    padding-right: 5vw;
+    text-align: start;
+    margin-left: 30vw;
+}
+
+.alitext46{
+    padding-right: 5vw;
+    text-align: start;
+    margin-top: -1vw; 
+    margin-left: 30vw;
+}
+
+.alitext48{
+    margin-left: 5vw;
+    text-align: start;
+    margin-top: 7vw; 
+    margin-right: 30vw;
+}
+
+.alitext52{
+    text-align: start;
+    margin-left: 5vw;
+    margin-right: 30vw;
+}
+
+.alitext57{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 7vw; 
+    text-align: start;
+}
+
+.alitext58{
+    margin-top: -1vw; 
+    margin-right: 72vw;
+}
+
+.alitext59{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 1.5vw; 
+    margin-right: 65vw; 
+    color: white;
+}
+
+.alitext60{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 1.5vw; 
+    margin-right: -2vw; 
+    margin-top: -3.5vw; 
+    color: white;
+}
+
+.alitext61{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 1.5vw; 
+    margin-right: -68vw; 
+    margin-top: -3vw; 
+    color: white;
+}
+
+.alitext62{
+    position: relative;
+    left: -32vw;
+    text-align: start;
+    margin-top: 2vw; 
+    padding-left: 40vw;
+    padding-right: 40vw;
+    color: white;
+}
+
+
+
+.alitext66{
+    text-align: start;
+    padding-left: 40vw;
+    padding-right: 40vw;
+    margin-top: -11vw; 
+    color: white;
+}
+
+
+.alitext72{
+    padding-left: 40vw;
+    padding-right: 40vw;
+    margin-top: 0vw; 
+   position: relative;
+   top: -11vw;
+   left: 35vw;
+    color: white;
+    text-align: start;
+}
+
+
+
+.ali4{
+    font-size: 20vw; 
+    margin-left: -10vw; 
+    margin-top: 1vw;  
+    color:#ffe1758c;
+}
+
+.ali5{
+    font-size: 20vw; 
+    margin-left: -11vw; 
+    margin-top: -45vw;
+}
+
+.ali6{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 4vw; 
+    margin-top: -33vw; 
+    margin-left: 50vw;
+}
+
+.ali7{
+    font-size: 20vw; 
+    margin-left: -70vw; 
+    margin-top: 1vw;  
+    color:#ffe1758c;
+}
+
+.ali8{
+    font-size: 20vw; 
+    margin-left: -71vw; 
+    margin-top: -45vw;
+}
+
+.ali9{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 4vw; 
+    margin-top: -33vw; 
+    margin-left: -25vw;
+}
+
+.ali10{
+    font-size: 20vw; 
+    margin-right: 10vw; 
+    margin-top: 1vw;  
+    color:#ffe1758c;
+}
+
+.ali11{
+    font-size: 20vw; 
+    margin-right: 11vw; 
+    margin-top: -45vw;
+}
+
+.ali12{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 4vw; 
+    margin-top: -33vw; 
+    margin-left: 30vw;
+}
+
+.ali13{
+    font-size: 20vw; 
+    margin-right: 70vw; 
+    margin-top: 1vw;  
+    color:#ffe1758c;
+}
+
+.ali14{
+    font-size: 20vw; 
+    margin-right: 71vw; 
+    margin-top: -45vw;
+}
+
+.ali15{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 4vw; 
+    margin-top: -33vw; 
+    margin-right: 25vw;
+}
+
+.ali16{
+    font-size: 20vw; 
+    margin-right: 10vw; 
+    margin-top: 1vw;  
+    color:#ffe1758c;
+}
+
+.ali17{
+    font-size: 20vw; 
+    margin-right: 11vw; 
+    margin-top: -45vw;
+}
+
+.ali18{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 4vw; 
+    margin-top: -33vw; 
+    margin-left: 33vw;
+}
+
+.ali19{
+    font-size: 20vw; 
+    margin-right: 70vw; 
+    margin-top: 1vw;  
+    color:#ffe1758c;
+}
+
+.ali20{
+    font-size: 20vw; 
+    margin-right: 71vw; 
+    margin-top: -45vw;
+}
+
+.ali21{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 4vw; 
+    margin-top: -33vw; 
+    margin-right: 30vw;
+}
+
+.ali22{
+    font-size: 20vw; 
+    margin-right: 60vw; 
+    margin-top: 1vw;  
+    color:#ffe1758c;
+}
+
+.ali23{
+    font-size: 20vw; 
+    margin-right: 60vw; 
+    margin-top: -45vw;
+}
+
+.ali24{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 4vw; 
+    margin-top: -35vw; 
+    margin-left: 13vw;
+}
+.ali25{
+    font-size: 10vw; 
+    text-align: center; 
+    margin-top: 1vw;  
+    color:#ffe1758c;
+}
+
+.ali26{
+    font-size: 10vw; 
+    text-align: center;
+    margin-left: -0.5vw;
+    margin-top: -22.5vw;
+}
+
+.ali27{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 4.5vw; 
+    text-align: center; 
+    margin-top: -8vw;
+}
+
+.batata{
+    width: 5vw; 
+    margin-left: 8vw; 
+}
+
+.carne{
+    width: 5vw; 
+    margin-left: 24vw; 
+}
+
+.queijo{
+    width: 5vw; 
+    margin-left: 28vw;
+}
+
+/* Batidos */
+.batido11{
+    font-size: 60.4px; 
+    margin-left: -45vw; 
+    color:#ffe1758c;
+}
+
+.batido12{
+    font-size: 60.4px;
+    margin-left: -45.2vw; 
+    margin-top: -137px;
+}
+
+
+
+.valorNutricional1{
+    
+    font-size: 13px; 
+    margin-left:600px; 
+    margin-top: -100px;
+}
+
+.ingrediente11{
+    font-size: 1.2vw; 
+    margin-top: -52.75vw; 
+    margin-bottom: 15vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente12{
+    font-size: 1.2vw;
+    margin-top: -9.4vw;
+    margin-left: -70vw;
+}
+
+.ingrediente13{
+    font-size: 1.2vw;
+    margin-top: 6vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente14{
+    font-size: 1.2vw;
+    margin-top: 5vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente15{
+    font-size: 1.2vw; 
+    margin-left: 55vw; 
+    margin-top: -26vw;
+}
+
+.ingrediente16{
+    font-size: 1.2vw; 
+    margin-left: 46vw; 
+    margin-top: 6vw;
+}
+
+.ingrediente17{
+    font-size: 1.2vw; 
+    margin-left: 45vw; 
+    margin-top: 6vw;
+}
+
+.ingrediente18{
+    font-size: 1.2vw; 
+    margin-left: 45vw; 
+    margin-top: 6vw;
+}
+
+.batido21{
+    font-size: 60.4px; 
+    margin-left: -45vw; 
+    color:#ffe1758c;
+}
+
+.batido22{
+    font-size: 60.4px;
+    margin-left: -45.2vw;  
+    margin-top: -137px;
+}
+
+.valorNutricional2{
+    font-size: 13px; 
+    margin-left:600px; 
+    margin-top: -100px;
+}
+
+.ingrediente21{
+    font-size: 1.2vw; 
+    margin-top: -52.75vw; 
+    margin-bottom: 15vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente22{
+    font-size: 1.2vw;
+    margin-top: -9.4vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente23{
+    font-size: 1.2vw;
+    margin-top: 6vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente24{
+    font-size: 1.2vw;
+    margin-top: 5vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente25{
+    font-size: 1.2vw;
+     margin-left: 58vw;
+      margin-top: -24vw;
+}
+
+.ingrediente26{
+    font-size: 1.2vw;
+    margin-left: 46vw; 
+    margin-top: 6vw;
+}
+
+.ingrediente27{
+    font-size: 1.2vw; 
+    margin-left: 53vw;
+     margin-top: 6vw;
+}
+
+.ingrediente28{
+    font-size: 1.2vw; 
+    margin-left: 45vw; 
+    margin-top: 6vw;
+}
+
+.batido31{
+    font-size: 60.4px; 
+    margin-left: -45vw; 
+    color:#ffe1758c;
+}
+
+.batido32{
+    font-size: 60.4px;
+    margin-left: -45.2vw;  
+    margin-top: -137px;
+}
+
+.valorNutricional3{
+    font-size: 13px; 
+    margin-left:600px; 
+    margin-top: -100px;
+}
+
+.ingrediente31{
+    font-size: 1.2vw; 
+    margin-top: -40vw; 
+    margin-bottom: 15vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente32{
+    font-size: 1.2vw;
+    margin-top: -9.4vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente33{
+    font-size: 1.2vw;
+    margin-top: 4vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente34{
+    font-size: 1.2vw;
+    margin-top: 5vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente35{
+    font-size: 1.2vw; 
+    margin-left: 50vw; 
+    margin-top: -26vw;
+}
+
+.ingrediente36{
+    font-size: 1.2vw; 
+    margin-left: 46vw; 
+    margin-top: 6vw;
+}
+
+.batido41{
+    font-size: 60.4px; 
+    margin-left: -15vw; 
+    color:#ffe1758c;
+}
+
+.batido42{
+    font-size: 60.4px;
+    margin-left: -15.2vw;  
+    margin-top: -137px;
+}
+
+.valorNutricional4{
+    font-size: 13px; 
+    margin-left:600px; 
+    margin-top: -60px;
+}
+
+.ingrediente41{
+    font-size: 1.2vw; 
+    margin-top: -38vw; 
+    margin-bottom: 15vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente42{
+    font-size: 1.2vw;
+    margin-top: -9.4vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente43{
+    font-size: 1.2vw;
+    margin-top: 6vw; 
+    margin-left: -70vw;
+}
+
+.ingrediente44{
+   font-size: 1.2vw;
+   margin-top: 6vw; 
+   margin-left: -70vw;
+}
+
+.ingrediente45{
+    font-size: 1.2vw; 
+    margin-left: 42vw; 
+    margin-top: -25vw;
+}
+
+.ingrediente46{
+    font-size: 1.2vw; 
+    margin-left: 57vw; 
+    margin-top: 6vw;
+}
+
+/* Dietas */
+
+.tituloD{
+    font-size: 8vw; 
+    margin-right: 10vw; 
+    margin-top: 5vw;
+    position: relative;
+    left: -5vw;
+}
+
+.introText1{
+    text-align: left;
+    position: relative;
+    padding-right: 80vw;
+   left: 12vw;
+   margin-top: -20vw;
+   top: 15vw;
+}
+
+.introText2{
+    text-align: left;
+    position: relative;
+    margin-left: 60vw;
+    padding-right: 10vw;
+    left: 6vw;
+    top: 5vw;
+}
+
+.introText3{
+    text-align: left;
+    position: relative;
+    margin-top: -0.5vw; 
+    margin-bottom: 0.5vw; 
+    margin-left: 60vw;
+    padding-right: 10vw;
+    left: 6vw;
+    top: 6vw;
+}
+
+.tituloDieta1{
+    font-size: 60.4px; 
+    text-align: center; 
+    color:#ffe1758c;
+}
+
+.tituloDieta2{
+    font-size: 60.4px; 
+    margin-top: -140px;
+}
+
+.tituloDieta3{
+    font-size: 60.4px; 
+    text-align: center; 
+    color:#ffe175e0;
+}
+
+.tituloDieta4{
+    font-size: 60.4px; 
+    margin-top: -140px;
+    color: white;
+}
+
+.textInicial{
+    margin-top: -0.5vw; 
+    margin-bottom: 0.5vw; 
+    text-align: start;
+    position: relative;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+}
+
+.perderPeso1{
+    text-align: start;
+    margin-top: -1vw; 
+    margin-left: 39vw;
+
+}
+
+.infoPerder1{
+    margin-left: 39vw;
+    text-align: start;
+    font-size: 1.5vw; 
+    margin-top: 3vw; 
+    margin-right: 13vw;
+}
+.infoPerder11{
+    margin-left: 39vw;
+    font-size: 1.5vw; 
+    margin-top: -5vw; 
+    margin-right: 13vw;
+    text-align: start;
+}
+
+.imagemPerder1{
+    width: 5vw; 
+    height: 5vw; 
+    margin-left: 29vw; 
+    margin-top: -30vw;
+    position: relative;
+    top: 2vw;
+}
+
+.imagemPerder11{
+    width: 7vw; 
+    height: 7vw; 
+    margin-left: 28vw; 
+    margin-top: 2vw;
+    position: relative;
+    top: 2vw;
+}
+
+
+.perderPeso2{
+    text-align: start;
+    margin-top: -1vw; 
+    margin-left: 10vw;
+    padding-right: 30vw;
+}
+
+.infoPerder2{
+    margin-left: 10vw;
+    text-align: start;
+    font-size: 1.5vw; 
+    margin-top: 3vw; 
+    margin-right: 13vw;
+}
+.infoPerder21{
+    margin-left: 10vw;
+    font-size: 1.5vw; 
+    margin-top: -5vw; 
+    margin-right: 13vw;
+    text-align: start;
+}
+
+.imagemPerder2{
+    width: 5vw; 
+    height: 5vw; 
+    margin-left: 1vw; 
+    margin-top: -30vw;
+    position: relative;
+    top: 2vw;
+}
+
+.imagemPerder21{
+    width: 7vw; 
+    height: 7vw; 
+    margin-left: 1vw; 
+    margin-top: 2vw;
+    position: relative;
+    top: 2vw;
+}
+
+.imagemPerder22{
+    width: 7vw; 
+    height: 7vw; 
+    margin-left: 1vw; 
+    margin-top: 2vw;
+    position: relative;
+    top: 2vw;
+}
+
+.perderPeso3{
+    text-align: start;
+    margin-top: -1vw; 
+    margin-left: 10vw;
+    
+}
+
+.infoPerder3{
+    margin-left: 10vw;
+    text-align: start;
+    font-size: 1.5vw; 
+    margin-top: 3vw; 
+    margin-right: 13vw;
+}
+
+.imagemPerder3{
+    width: 5vw; 
+    height: 5vw; 
+    margin-left: 1vw; 
+    margin-top: -30vw;
+    position: relative;
+    top: 2vw;
+}
+
+.ganharPeso1{
+    text-align: start;
+    margin-top: -0.7vw; 
+    margin-left: 55vw;
+}
+
+.infoGanhar1{
+    text-align: start;
+    font-family: 'Recursive', sans-serif; 
+    font-size: 1.5vw; 
+    margin-top: -7vw; 
+    margin-left: 55.5vw;
+}
+
+.imagemGanhar1{
+    text-align: start;
+    width: 7vw; 
+    height: 7vw;
+    margin-left: 47vw;
+    margin-top: 1vw; 
+}
+
+
+.ganharPeso2{
+    text-align: start;
+    margin-top: -1vw; 
+    margin-left: 9vw;
+    padding-right: 50vw;
+}
+
+.infoGanhar2{
+    text-align: start;
+    font-family: 'Recursive', sans-serif; 
+    font-size: 1.5vw;
+     margin-top: -10vw; 
+     margin-left: 10vw;
+}
+
+.imagemGanhar2{
+    text-align: start;
+    width: 9vw; 
+    height: 7vw; 
+    margin-top: 3vw; 
+    margin-left: -2vw;
+    position: relative;
+    top: -3vw;
+}
+
+/* Formulario */
+.form1{
+    text-align: center; 
+    color: #ffe1758c;
+}
+
+.form2{
+    text-align: center; 
+    margin-top: -12.3vw; 
+    margin-left: -0.3vw;
+}
+
+/* Tecnicas */
+
+.tecn1{
+    font-size: 1.3vw; 
+    font-family: 'Recursive', sans-serif;
+}
+
+
+.tecn3{
+    margin-top: 8vw;
+    font-size: 3vw; 
+    margin-left: 0.5vw;
+}
+
+
+
+.tecn7{
+    font-size: 6vw; 
+    margin-left: 0.5vw;
+}
+
+.tecn11{
+    font-size:1vw; 
+    font-family: 'Recursive', sans-serif;
+}
+
+
+.tecn13{
+    font-size: 6vw; 
+    margin-left: 0.5vw;
+}
+
+
+.tecn15{
+    font-size: 6vw; 
+    margin-left: 0.5vw;
+}
+
+
+
+.tecn17{
+    font-size: 6vw; 
+    margin-left: 0.5vw;
+}
+
+.tab1{
+    font-size:1vw; 
+    font-family: 'Recursive', sans-serif;
+}
+
+.videoIntro{
+    width:560px; 
+    height:315px;
+}
+
+/* Exercicios */
+.exe2{
+    text-align: center;
+    padding-top: 35vw; 
+    margin-top: 0.2rem;
+}
+
+.exe3{
+    text-align: center;
+    padding-top: 3vw; 
+    margin-top: -0.8rem;
+}
+
+.exe4{
+    font-size: 5vw; 
+    text-align: center; 
+    color:#ffe1758c; 
+    padding-top: 1vw; 
+    margin-top: -1vw;
+}
+
+.exe5{
+    font-size: 5vw; 
+    text-align: center; 
+    margin-left: -0.5vw;  
+    margin-top: -13vw;
+}
+
+.exe6{
+    font-size: 5vw; 
+    text-align: center; 
+    color:#ffe1758c; 
+    padding-top: 1vw; 
+    position: relative;
+    top: -7vw;
+}
+
+.exe7{
+    position: relative;
+    font-size: 5vw; 
+    text-align: center; 
+    margin-left: -0.5vw;  
+    margin-top: -20vw; 
+    padding-bottom: 2vw;
+}
+
+
+.exetext1{
+     margin-top: -70px;
+    margin-left: 18vw;
+}
+
+.exetext2{
+    margin-top: -2.2vw;
+    margin-left: 38vw;
+}
+
+.exetext3{
+    margin-top: -2.5vw;
+    margin-left: 63vw;
+}
+
+.exetext4{
+    margin-top: -2.5vw;
+    margin-left: 85vw;
+}
+
+.exetext5{
+    margin-left: 16vw;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.exetext6{
+    margin-top: -105px ;
+    margin-left: 37vw; 
+    font-size: 16px;
+}
+
+.exetext7{
+    margin-top: -115px ;
+    margin-left: 59vw; 
+    font-size: 16px;
+}
+
+.exetext8{
+    margin-top: -90px ;
+    margin-left: 82vw;
+    font-size: 16px; 
+    padding-bottom: 4vw;
+}
+
+.exetext9{
+    margin-top: -1.5vw;
+    margin-left: 10vw;
+}
+
+.exetext10{
+    margin-top: -2vw;
+    margin-left: 31vw;
+}
+
+.exetext11{
+    margin-top: -2vw;
+    margin-left: 52vw;
+}
+
+.exetext12{
+    margin-top: -2vw;
+    margin-left: 80vw; 
+    margin-bottom: 5vw;
+}
+
+.exetext13{
+    color: white; 
+    position: relative; 
+    margin-left: 40vw; 
+    margin-top: -29.2vw;
+}
+
+.exetext14{
+    margin-left: 67vw; 
+    color: white; 
+    margin-top: -14vw;
+}
+
+.exetext15{
+    color: white; 
+    margin-left: 40vw; 
+    margin-bottom: 10vw; 
+    position: relative; 
+    top: 0vw;
+}
+
+
+.exetext16{
+    margin-left: 67vw; 
+    color: white; 
+    margin-top: -14vw;
+    position: relative;
+    top: -4vw;
+}
+
+.pernas{
+    width: 8%;
+    height: 5%;
+}
+
+.bracos{
+    width: 8%;
+    height: 5%;
+}
+
+.core{
+    width: 8%;
+    height: 5%;
+}
+
+.costas{
+    width: 8%;
+    height: 5%;
+}
+
+.imagenscont2{
+    margin-left: 10vw;
+}
+
+.correr{
+    width: 9vw; 
+    height: 9vw;
+}
+
+.corda{
+    width: 7vw; 
+    height: 9.5vw; 
+    margin-left: 15vw;
+}
+
+.bicicleta{
+    width: 8vw; 
+    height: 9vw;
+    margin-left: 15vw;
+}
+
+.burpee{
+    width: 8vw; 
+    height: 10vw; 
+    margin-left: 15vw;
+}
+
+.chloe1{
+    width: 25%; 
+    height: 13vw; 
+    margin-left: 36vw; 
+    margin-top: 3.6vw;
+}
+
+.chloe2{
+    width: 35.8vw; 
+    height: 15vw; 
+    position: relative; 
+    top: -29vw; 
+    left: 58.9vw;
+}
+
+.videochloe{
+    width:40%; 
+    height:75%; 
+    position: relative;
+    top: -6.4vw;
+}
+
+.fig1{
+    margin-top: 0.5vw;
+}
+
+#chloe4{
+    width: 25vw; 
+    height: 6vw; 
+    margin-left: 94vw; 
+    margin-top: 1.5vw; 
+}
+
+.videocarol{
+    width:40%;
+    height:70%;
+    position: relative; 
+    margin-bottom: -26vw; 
+    top: -2vw;
+}
+
+.carol1{
+    width: 27.3%; 
+    height: 14vw; 
+    margin-left: 36.5vw; 
+    position: relative; 
+    top: -6.6vw;
+}
+
+.carol2{
+    width: 55%; 
+    height: 13vw; 
+    position: relative; 
+    top: -33vw; 
+    left: 61.5vw; 
+    margin-bottom: -12vw;
+}
+
+#carol3{
+    width: 25vw; 
+    height: 6vw; 
+    margin-left: 94vw; 
+    margin-top: 1vw; 
+    position: relative; 
+    top: -5.3vw;
+}
+
+.videopamela{
+    position: relative; 
+    margin-bottom: -20vw; 
+    top: 7vw; 
+    margin-top: -5vw;
+    width:40%;
+    height:70%;
+}
+
+.exetext17{
+    color: white; 
+    margin-left: 40vw; 
+    margin-bottom: 10vw; 
+    position: relative; 
+    top: 3vw;
+}
+
+.exetext18{
+    margin-left: 67vw; 
+    color: white; 
+    margin-top: -16vw;
+    position: relative; 
+    top: 1vw;
+}
+
+.exetext19{
+    color: white; 
+    margin-left: 40vw; 
+    margin-bottom: 10vw; 
+    position: relative; 
+    top: 3vw;
+}
+
+.pamela1{
+    width: 27.3%; 
+    height: 10vw; 
+    margin-left: 36.5vw; 
+    position: relative; 
+    top: -3.5vw;
+}
+
+#pamela3{
+    width: 25vw; 
+    height: 6vw; 
+    margin-left: 94vw; 
+    margin-top: 2vw; 
+    position: relative; 
+    top: -1.5vw;
+}
+
+.pamela2{
+    width: 47.5%; 
+    height: 16vw; 
+    position: relative; 
+    top: -29.5vw; 
+    left: 61.5vw; 
+    margin-bottom: -16vw;
+}
+
+.videonate{
+    position: relative; 
+    margin-bottom: -20vw; 
+    top: 7vw; 
+    margin-top: -5vw;
+}
+
+#nate1{
+    margin-left: 65vw; 
+    position: relative; 
+    top: -3vw;
+}
+
+.nate2{
+    width: 40%; 
+    height: 27.7vw; 
+    margin-top: -60vw;  
+    margin-left: 58vw; 
+    position: relative; 
+    top: -4.6vw;
+}
+
+.videojeff{
+    position: relative;
+    top: -8.4vw; 
+    width: 40%;
+    height: 75%;
+}
+
+.exetext20{
+    color: white; 
+    position: relative; 
+    margin-left: 2vw; 
+    margin-top: -5.2vw;
+}
+
+.jeff1{
+    width: 60.3%; 
+    height: 15vw;  
+    margin-top: 3.6vw; 
+    margin-left: -2.9vw; 
+    position: relative; 
+    top: -2vw;
+}
+
+.exetext21{
+    margin-left: 37vw; 
+    color: white; 
+    position: relative; 
+    top: -16vw;
+}
+
+#jeff2{
+    width: 25%; 
+    height: 5vw; 
+    margin-left: 63vw; 
+    position: relative; 
+    top: -14vw; 
+}
+
+.jeff3{
+    width: 37.4%; 
+    height: 13vw; 
+    position: relative; 
+    left: 30.6vw; 
+    top: -40.3vw;
+}
+
+.videosalgueiro{
+    position: relative; 
+    left: 60%; 
+    margin-bottom: -30vw; 
+    top: 7.2vw;
+}
+
+.salgueiro1{
+    width: 27.3%; 
+    height: 15vw; 
+    margin-left: 31.5vw; 
+    position: relative; 
+    top: 4.8vw; 
+    left: -1vw;
+}
+
+.exetext22{
+    color: white; 
+    margin-left: 40vw; 
+    margin-bottom: 5vw; 
+    position: relative; 
+    top: 6vw;
+    left: -5vw;
+}
+
+.exetext23{
+    color: white; 
+    margin-top: -14vw;
+    position: relative; 
+    top: 0vw; 
+    left: 12vw;
+}
+
+#salgueiro2{
+    width: 90%; 
+    height: 16vw; 
+    margin-top: 1vw; 
+    position: relative;
+    left: 30vw;
+    top: -2vw;
+}
+
+.salgueiro3{
+    width: 50%; 
+    height: 15vw; 
+    position: relative; 
+    top: -38.75vw; 
+    left: -2.95vw; 
+    margin-bottom: -12vw;
+}
+
+.videojoe{
+    margin-left: 55vw; 
+    position: relative; 
+    top: 67px; 
+    margin-bottom: -3.5vw;
+}
+
+.exetext24{
+    color: white;  
+    position: relative; 
+    top: -260px; 
+    left: 1vw;
+}
+
+.joe1{
+    width: 75.2%; 
+    height: 14vw; 
+    margin-top: -22vw; 
+    margin-bottom: 0.2vw; 
+    margin-left: -3vw;
+}
+
+#joe2{
+    margin-left: 60vw; 
+    margin-top: -30vw; 
+    margin-bottom: 270px;
+}
+
+.jeremy1{
+    width: 50%; 
+    height: 322px; 
+    margin-top: -40vw;  
+    position: relative; 
+    top: -2.2vw; 
+    left: -3vw;
+}
+
+.videojeremy{
+    margin-left: 56vw;  
+    margin-top: 4vw;
+    margin-bottom: -7.7vw;
+}
+.exetext25{
+    color: white;  
+    position: relative; 
+    top: -180px; 
+    left: 32vw;
+}
+
+/* Menu do telemovel */
+
+.menu {
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: transparent;
+    font-family:'Helvetica Neue', sans-serif;
+    margin-top: -250vw;
+   margin-bottom: 50vw;
+}
+
+h1 a {
+  font-size: 4vw;
+  color: black;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #F4F2F2;
+  width: 100%;
+  position: relative;
+
+}
+
+.popover {
+    
+   display: none;
+   box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
+}
+
+.popover:target {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popover .content {
+  
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 0;
+  height: 0;
+  color: #fff;
+  background-color: #191919;
+  animation: 1s grow ease forwards;
+  text-align: center;
+}
+
+.nav_list  {
+  list-style-type: none;
+}
+
+.nav_list a {
+  text-decoration: none;
+  font-size: 33px;
+  color: #fff;
+}
+
+.nav_list_item {
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav_list li {
+  padding: 15px 0;
+  text-transform: uppercase;
+  transform: translateY(200px);
+  opacity: 0;
+  animation: 2s slideUp ease forwards .5s;
+  position: relative;
+}
+
+.nav_list li::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  left: 0;
+  bottom: 10px;
+  background: #FFE175; 
+  transition: all .5s ease;
+}
+
+.nav_list li:hover:before {
+      width: 100%;
+}
+
+.popover p {
+  padding: 50px;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards 1s;
+}
+
+.popover .close::after {
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFE175;
+  color: black;
+  content: "×";
+  cursor: pointer;
+  opacity: 0; 
+  animation: 1s fadeIn ease forwards .5s;
+}
+
+@keyframes grow {
+  100% {
+    height: 90%;
+    width: 90%;
+ }
+}
+
+@keyframes fadeIn {
+100% {
+  opacity: 1;
+ }
+}
+
+@keyframes slideUp {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* Menu do telemovel*/
+
+    @media screen and (min-width: 551px) and (max-width: 1679px) {
+        .popeyeInicial{
+            left: 12vw;
+            z-index: 1;
+            position: relative;
+            width: 20%;
+            animation-name:lingrinhas;
+            animation-duration: 0s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        }
+
+        .pratoEsquerdo{
+            position: relative;
+            margin-left: 26vw; 
+            width: 20vw; 
+            height: 30vw; 
+            margin-top: -12vw;
+            
+        }
+
+        .pratoDireito{
+            position: relative;
+            margin-left: 46vw; 
+            width: 18vw; 
+            height: 32.3vw; 
+            margin-top: -50vw; 
+            margin-bottom: 2vh;
+            
+        }
+    
+        .popeyeFinal{
+            position: relative;
+            top: -1vw;
+            left: -8vw;
+            width: 30%;
+            visibility: hidden;
+            animation-name:musculo;
+            animation-duration: 0s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        }
+    
+        .espinafre{
+           top: -11.5vw;
+           left: 7.5vw;
+            position: relative;
+            animation-name:saltoEspinafre;
+            animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+            width: 4%;
+        }
+
+    
+        .animation2{
+            margin-left: -16vw;
+            margin-top: -6vw;
+            
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        }
+    
+    
+        @keyframes saltoEspinafre{
+            0%{transform: scaleY(-1)}
+            10%{transform: scaleY(-1) translateY(20px)}
+            50%{transform: scaleY(-1) translateX(-5vw) translateY(120px) }
+            100%{transform: translateX(-5vw) translateY(20px); visibility: hidden; }
+        }
+    
+    
+        @keyframes musculo{
+            from{visibility: hidden;}
+            to{visibility: visible;}
+        }
+    
+        @keyframes lingrinhas{
+            from{visibility: visible;}
+            to{visibility: hidden;}
+        }
+    }
+    @media screen and (min-width: 1680px) {
+
+        .pratoEsquerdo{
+            position: relative;
+            margin-left: 27vw; 
+            width: 20vw; 
+            height: 30vw; 
+            margin-top: -12vw;
+            top: -0.7vw;
+        }
+
+        .pratoDireito{
+            position: relative;
+            margin-left: 47vw; 
+            width: 18vw; 
+            height: 32.3vw; 
+            margin-top: -50vw; 
+            margin-bottom: 2vh;
+            
+        }
+
+        .popeyeInicial{
+            left: 12vw;
+            z-index: 1;
+            position: relative;
+            width: 20%;
+            animation-name:lingrinhas;
+            animation-duration: 0s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        }
+    
+        .popeyeFinal{
+            position: relative;
+            top: -1vw;
+            left: -2vw;
+            width: 30%;
+            visibility: hidden;
+            animation-name:musculo;
+            animation-duration: 0s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        }
+    
+        .espinafre{
+           top: -8vw;
+           left: 9vw;
+            position: relative;
+            animation-name:saltoEspinafre;
+            animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+            width: 4%;
+        }
+    
+        .animation2{
+            margin-left: -6vw;
+            margin-top: -6vw;
+            
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        }
+
+        
+    
+    
+        @keyframes saltoEspinafre{
+            0%{transform: scaleY(-1)}
+            10%{transform: scaleY(-1) translateY(20px)}
+            50%{transform: scaleY(-1) translateX(-4vw) translateY(120px) }
+            100%{transform: translateX(-4vw) translateY(13px); visibility: hidden; }
+        }
+    
+    
+        @keyframes musculo{
+            from{visibility: hidden;}
+            to{visibility: visible;}
+        }
+    
+        @keyframes lingrinhas{
+            from{visibility: visible;}
+            to{visibility: hidden;}
+        }
+
+        .toTop{
+            position: fixed;
+            left: 90vw;
+           top: 3vw;
+            width: 2%;
+           z-index: 1;
+            transform: rotate(90deg);
+        }
+
+        
+    }

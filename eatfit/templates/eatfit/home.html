@@ -1,0 +1,67 @@
+{% extends 'eatfit/base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static  'eatfit/css/intro.css' %}">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+        "video Introducao";
+
+            color: black;
+            text-align: center;
+
+        }
+
+    </style>
+    <script src="{% static  'eatfit/js/rainbowGenerator.js' %}"></script>
+{% endblock %}
+{% block content %}
+    <h1 class="title" style="color: black; margin-left: -45vw; font-size: 10vw">EAT & FIT</h1>
+    <div class="extraMenu">
+        <p class="site1">
+            Site
+        </p>
+        <a class="navbar-brand" href="{% url 'eatfit:login' %}">Login</a>
+        <a class="navbar-brand" href="{% url 'eatfit:website' %}">O Website</a>
+        <a class="navbar-brand" href="{% url 'eatfit:contactos' %}">Formulário</a>
+        <a class="navbar-brand" href="{% url 'eatfit:comentarios' %}">Comentários</a>
+        <a class="navbar-brand" href="{% url 'eatfit:quizz' %}">Quiz</a>
+        <a class="navbar-brand" href="{% url 'eatfit:taulas' %}">Aulas</a>
+        <a class="navbar-brand" href="{% url 'eatfit:autores' %}">Sobre Nós</a>
+
+
+    </div>
+{% endblock %}
+{% block main %}
+
+
+
+
+    <div class="container" style="margin-left: -15vw">
+
+        <video autoplay muted loop style="height: 75%">
+            <source src={% static  'eatfit/videos/warmup.mp4' %} type="video/mp4">
+        </video>
+
+        <div id="Introducao">
+            <div class="card text-center" style="width: 38rem; margin-left: 4vw">
+                <div class="card-body">
+                    <h1 class="card-title" style="font-size: 4vw">INTRODUÇÃO</h1>
+
+                    <p class="card-text" style="font-size: 2vw">Este site destina-se a todas as pessoas que pretendem
+                        ter uma melhor saúde
+                        física e
+                        mental.<br><br>
+                        O nosso objetivo é passar alguma da informação que sabemos, na esperança de ajudar o próximo
+                        a entrar no
+                        MOVIMENTO!</p>
+                    <a href="#top" class="card-link">Explore o site com mais atenção <img class="setinha"
+                                                                                          src={% static  'eatfit/images/setaAmarela.png' %}></a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
