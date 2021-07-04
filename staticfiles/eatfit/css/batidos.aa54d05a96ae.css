@@ -1,0 +1,442 @@
+
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 35px;
+    margin-left: -700px;
+}
+
+h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+* {
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+}
+
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+                "header header"
+                "content1 content1"
+                "content2 content2"
+                "content3 content3"
+                "content4 content4";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+}
+
+
+header {
+    text-align: center;
+    background-image: url("../images/Imagem11.ec18558ca1bf.png");
+    background-color: #F4F2F2;
+    background-position: 90%, right;    background-position-y: 7vh;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    grid-area: header;
+}
+
+nav {
+    background-color: #F4F2F2;
+}
+
+
+#content1 {
+
+    background-image: url("../images/batidochoc.1d2ccfc02100.png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+
+    background-position-y: 6vh;
+    background-color: #F4F2F2;
+    grid-area: content1;
+}
+
+
+#content2 {
+    height: 95vh;
+    background-image: url("../images/batidolaran.5497bed9de40.png");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 35vw;
+    background-position-y: 12vh;
+    background-color: #F4F2F2;
+    grid-area: content2;
+}
+
+
+#content3 {
+    height: 95vh;
+    background-image: url("../images/batidococo.82bccf10887f.png");
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position-x: 35vw;
+    background-position-y: 12vh;
+    background-color: #F4F2F2;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content4 {
+    height: 110vh;
+    background-image: url("../images/batidomorango.532002f103a5.png");
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position-x: 34vw;
+    background-position-y: 23vh;
+    background-color: #F4F2F2;
+    grid-area: content4;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1.5rem;
+    color: black;
+    font-size: 17px;
+    margin-left: -400px;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+[class^="lista"] {
+    display: none;
+}
+
+[class^="valorNutricional"] {
+    font-family: 'Recursive', sans-serif;
+}
+
+.mobile {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.descricaoB {
+    margin-top: 2vw;
+    font-size: 1.7vw;
+
+    margin-left: -14vw;
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+                    "mobile mobile"
+                    "main main"
+                    "content1 content1"
+                    "content2 content2"
+                    "content3 content3"
+                    "content4 content4"
+                    "footer footer";
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+
+    main {
+        background-position: 90% 70%, right;
+        background-size: 50%, 30% 100%;
+        height: 50vh;
+    }
+
+    .mobile {
+        justify-content: center;
+        display: flex;
+        background: #F4F2F2;
+        grid-area: mobile;
+        height: 10vh;
+    }
+
+    #content1 {
+        height: 70vh;
+        background-size: 70%;
+        background-position: center left;
+        background-position-x: -10vw;
+    }
+
+    #content2 {
+        height: 70vh;
+        background-size: 70%;
+        background-position: 130% 50%;
+
+    }
+
+    #content3 {
+        height: 70vh;
+        background-size: 60%;
+        background-position: center left;
+        background-position-x: -10vw;
+    }
+
+    #content4 {
+        height: 70vh;
+        background-size: 65%;
+        background-position: 110% 170%;
+
+    }
+
+
+    .tituloB {
+        position: relative;
+        top: -4vw;
+        margin-left: -10vw;
+        text-align: center;
+        font-size: 15vw;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1 a {
+
+        font-size: 4vw;
+        color: black;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: #F4F2F2;
+        width: 100%;
+        position: relative;
+        left: -8vw;
+
+
+    }
+
+
+    a {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1.35px;
+        text-decoration: none;
+        color: black;
+        margin: 0px;
+    }
+
+    .toTop {
+        display: none;
+    }
+
+    [class^="lista"] {
+        display: inherit;
+    }
+
+    [class^="seta"] {
+        display: none;
+    }
+
+    /* Nomes dos batidos */
+    .batido11 {
+        text-align: start;
+        position: relative;
+        top: -2vh;
+        font-size: 40px;
+        margin-left: 4vw;
+    }
+
+    .batido12 {
+        text-align: start;
+        position: relative;
+        font-size: 40px;
+        margin-left: 3vw;
+        margin-top: -23.8vh;
+    }
+
+    .valorNutricional1 {
+        text-align: start;
+        position: relative;
+        top: -20vw;
+        margin-top: 0vw;
+        margin-left: 45vw;
+    }
+
+    [class^="ingrediente"] {
+        display: none;
+    }
+
+    .listaTitle1 {
+        font-size: 8vw;
+        font-weight: bold;
+        margin-left: 40vw;
+        margin-top: -15vw;
+    }
+
+    .lista1 {
+        margin-left: 35vw;
+        margin-top: 0vw;
+    }
+
+
+    .batido21 {
+        text-align: end;
+        position: relative;
+        top: -2vh;
+        font-size: 40px;
+        margin-right: 15vw;
+        margin-left: 1vw;
+    }
+
+    .batido22 {
+        text-align: end;
+        position: relative;
+        font-size: 40px;
+        margin-right: 15vw;
+        margin-top: -23.8vh;
+        margin-left: 1vw;
+        left: -1vw;
+    }
+
+    .valorNutricional2 {
+        text-align: start;
+        position: relative;
+        top: -23vw;
+        margin-top: 0vw;
+        margin-left: 5vw;
+        padding-right: 45vw;
+    }
+
+    .listaTitle2 {
+        font-size: 8vw;
+        font-weight: bold;
+        margin-left: -40vw;
+        margin-top: -15vw;
+    }
+
+    .lista2 {
+        margin-left: -2vw;
+        margin-top: 0vw;
+        padding-right: 40vw;
+    }
+
+    .batido31 {
+        text-align: start;
+        position: relative;
+        top: -2vh;
+        font-size: 40px;
+        margin-left: 10vw;
+    }
+
+    .batido32 {
+        text-align: start;
+        position: relative;
+        font-size: 40px;
+        margin-left: 9vw;
+        margin-top: -23.8vh;
+    }
+
+    .valorNutricional3 {
+        text-align: start;
+        position: relative;
+        top: -20vw;
+        margin-top: 0vw;
+        margin-left: 55vw;
+    }
+
+    .listaTitle3 {
+        font-size: 8vw;
+        font-weight: bold;
+        margin-left: 40vw;
+        margin-top: -15vw;
+    }
+
+    .lista3 {
+        margin-left: 35vw;
+        margin-top: 0vw;
+    }
+
+
+    .batido41 {
+        text-align: end;
+        position: relative;
+        top: -4vh;
+        font-size: 40px;
+        margin-right: 15vw;
+        margin-left: 1vw;
+    }
+
+    .batido42 {
+        text-align: end;
+        position: relative;
+        font-size: 40px;
+        margin-right: 15vw;
+        margin-top: -23.8vh;
+        margin-left: 1vw;
+        top: -17vw;
+        left: -1vw;
+    }
+
+    .valorNutricional4 {
+        text-align: start;
+        position: relative;
+        top: -36vw;
+        margin-top: 0vw;
+        margin-left: 5vw;
+        padding-right: 45vw;
+    }
+
+    .listaTitle4 {
+        font-size: 8vw;
+        font-weight: bold;
+        margin-left: -45vw;
+        margin-top: -35vw;
+    }
+
+    .lista4 {
+        margin-left: -4vw;
+        margin-top: 0vw;
+        padding-right: 40vw;
+    }
+
+    /* */
+    ul {
+        text-align: left;
+    }
+
+
+    .ajudas {
+        display: none;
+    }
+
+    .descricaoB {
+
+        font-size: 4vw;
+        margin-left: 4vw;
+        margin-top: -120px;
+        padding-right: 50vw;
+    }
+
+
+}

@@ -1,0 +1,74 @@
+body {
+    overflow-x: hidden;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.35px;
+}
+
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 35px;
+    margin-left: -700px;
+}
+
+h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+* {
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+}
+
+.alitext1 {
+        font-family: 'Recursive', sans-serif;
+        font-size: 1.5vw;
+        margin-top: -10vw;
+       font-weight: bold;
+    }
+
+
+
+
+header {
+
+    background-image: url("../images/alimentos.0f91efaf76e0.jpg");
+    background-position-y: -35vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    grid-area: main;
+
+}
+
+nav {
+    background-color: #ebe9e9;
+
+    top: 0;
+}
+
+
+
+
+a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1.5rem;
+    color: black;
+    font-size: 17px;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mobile {
+    display: none;
+}
+

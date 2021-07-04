@@ -1,0 +1,77 @@
+.site1 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 4vw;
+    margin-bottom: -1vh;
+    transform: rotate(-15deg);
+    text-transform: none;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.35px;
+    text-decoration: none;
+    color: black;
+}
+
+#Introducao {
+
+
+    grid-area: Introducao;
+}
+
+body {
+    background-color: #FFE175;
+}
+
+
+header {
+    height: 50%;
+    background-image: url("../images/Corredora.e03f0b664235.png");
+    background-repeat: no-repeat;
+    background-size: 80% 140%;
+    background-position-x: 12vw;
+    background-position-y: -6vh;
+    background-color: #FFE175;
+    grid-area: header;
+
+
+}
+
+video {
+
+    width: 50vw;
+    grid-area: video;
+    background-color: black;
+}
+
+.descricao {
+    font-size: 2.3vw;
+    padding: 3vw;
+    text-align: center;
+    margin-top: 20vh;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.explore {
+    font-family: 'Yellowtail', cursive;
+    font-size: 2vw;
+    margin-top: 14vh;
+    margin-left: 10vw;
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "video video"
+            "Introducao Introducao"
+    }
+}

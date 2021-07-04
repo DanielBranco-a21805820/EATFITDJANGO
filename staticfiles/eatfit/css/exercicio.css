@@ -1,0 +1,49 @@
+
+.introExercicios {
+    margin-left: 48vw;
+    margin-right: -5vw;
+    text-align: start;
+    margin-top: -10vh;
+    font-family: 'Oxygen', sans-serif;
+}
+
+header {
+    background-image: url('../images/abs.jpg');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 13vw;
+    background-position-y: 28vh;
+}
+
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3vw;
+}
+
+h3 {
+    font-family: 'Recursive', sans-serif;
+    font-size: 1.5vw;
+}
+
+h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+* {
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+}
+
+
+
+body {
+    overflow-x: hidden;
+    background-color: #F4F2F2;
+}
+
+
+.exe2{
+    text-align: center;
+    padding-top: 35vw;
+    margin-top: -35rem;
+}

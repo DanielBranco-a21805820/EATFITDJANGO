@@ -1,0 +1,106 @@
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.35px;
+}
+
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 35px;
+    text-align: center;
+
+}
+
+h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+* {
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+}
+
+ul li {
+    font-family: 'Recursive', sans-serif;
+}
+
+h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+header {
+    background-image: url("../images/conselhos.f7f2c6f32d0e.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: main;
+
+}
+
+
+a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1.5rem;
+    color: black;
+    font-size: 17px;
+
+}
+
+
+.introConselho {
+    font-size: 1.2vw;
+    position: relative;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 30vw;
+
+}
+
+.consetext13 {
+    font-size: 1.2vw;
+    margin-left: -8vw;
+    text-align: start;
+    margin-top: 5vw;
+}
+
+
+
+.vidspa {
+    margin-left: 25vw;
+    margin-top: -18vw;
+    margin-bottom: 2vw;
+    width: 65%;
+
+}
+
+.consetext15 {
+    font-size: 1.2vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    text-align: start;
+
+}
+
+.consetext22 {
+    font-size: 1.2vw;
+    margin-left: -0vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    margin-top: 2vw;
+    text-align: start;
+}
+
+.esquerdo {
+    width: 32%;
+    margin-top: -100vw;
+    margin-left: 90rem;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #FFE175;
+}
+

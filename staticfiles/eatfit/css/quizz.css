@@ -1,0 +1,45 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+p {
+    padding-left: 10vw;
+    padding-right: 55vw;
+    text-align: start;
+    margin-top: -10vh;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 6vw;
+}
+
+
+h3 {
+    font-family: 'Recursive', sans-serif;
+    font-size: 1.5vw;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.35px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 60%;
+}
+
+
+
